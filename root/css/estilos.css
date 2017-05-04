@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
+	font-size: 14px;
+	margin: 0;   /*mayoria de sitios porque empieza del pixel 1*/
+}
+
+
+header {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 1;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+header #logo { 
+	position: relative;
+	display: block;
+	width: 96px;
+	height: 26px;
+	background-image: url(../imagenes/logo-blanco.svg);
+	background-size: 96px 26px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-indent: -9999px;
+}
+
+
+header nav a { 
+
+position: relative;
+	display: inline-block;
+	padding: 3px 20px;
+	color: #fff;
+	font-size: 16px;
+
+}
+
+header nav a:hover { 
+
+text-decoration: none;
+color: #faa832;
+
+}
+
+header #menu-movil {
+	position: fixed;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	top: 3px;
+	right: 15px;
+	text-indent: -9999px;
+	background-image: url(../imagenes/menu.svg);
+	background-size: 32px 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+header #menu-movil:hover {
+	background-color: #faa832;
+}
+
+/*header #contenedor-menu:hover nav {
+	display: block;
+}
+alternativa sin js
+*/
+
+@media screen and (min-width: 1px) and (max-width: 767px)
+{	/*XS*/	
+	
+		header nav a {
+			display: block;
+			clear: both;
+			width: 100%;
+			text-align: center;
+			padding: 12px 20px;
+		}
+	
+	header nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{	/*SM*/
+	header nav a {
+			display: block;
+			clear: both;
+			width: 100%;
+			text-align: center;
+			padding: 12px 20px;
+		}
+	
+	header nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{	/*MD*/	
+	
+		header nav {
+			text-align:right;
+		}
+	
+}
+
+@media screen and (min-width: 1200px)
+{	/*LG*/
+	
+		header nav {
+			text-align:right;
+		}
+	
+}
+
+
+
